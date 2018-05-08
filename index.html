@@ -4,21 +4,24 @@
 
 body {
   margin: 0;
-  /* margin-top: 80px; */
-  background: black;
-  /* linear-gradient(#94F1D2, #57F2E2); */
+  margin-top: 80px;
+  background: linear-gradient(#94F1D2, #57F2E2) fixed;
 }
 
 .video {
-  flex: 1;
   width: 100vw;
+  max-width: 500px;
+}
+
+.video video {
+  width: 100vw;
+  max-width: 500px;
 }
 
 #content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   width: 100vw;
 }
 
@@ -43,6 +46,15 @@ body {
   margin-top: 1.5vh;
 }
 
+H2 {
+  color: white;
+  font-family: helvetica;
+  background: black;
+  position: absolute;
+  padding: 1vw;
+  /* margin-left: 1vw; */
+}
+
 </style>
 </head>
 <body>
@@ -51,35 +63,53 @@ body {
 </div>
 
 <div id="content">
-  <video class="video" controls loop poster="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/1.png?alt=media&token=843e0381-bee5-41f2-9183-fc0d513ae0c9">
-    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/1.mp4?alt=media&token=f10267a6-e4f2-4982-94bf-e3ece44a4e9e" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="video">
+    <H2>Dinner Dinner!</h2>
+    <video controls loop poster="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/1.png?alt=media&token=843e0381-bee5-41f2-9183-fc0d513ae0c9">
+      <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/1.mp4?alt=media&token=f10267a6-e4f2-4982-94bf-e3ece44a4e9e" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-  <video class="video" controls>
-    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/2.mp4?alt=media&token=7c1545b0-0dcd-424d-8cee-bc48ce2347f1" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="video">
+    <H2>Freeeeqq</h2>
+    <video controls loop poster="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/2.png?alt=media&token=f5a5a4e4-ca1b-47ae-a4cf-59e04d473615">
+      <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/2.mp4?alt=media&token=7c1545b0-0dcd-424d-8cee-bc48ce2347f1" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-  <video class="video" controls>
-    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/3.mp4?alt=media&token=92f7e2eb-5583-463c-b992-f4ea624889ae" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="video">
+    <H2>Breakfast Time</h2>
+    <video controls loop poster="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/3.png?alt=media&token=3f52c89f-ec85-46c6-8a84-cf5617943002">
+      <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/3.mp4?alt=media&token=92f7e2eb-5583-463c-b992-f4ea624889ae" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-  <video class="video" controls>
-    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/4.mp4?alt=media&token=2b071c87-f3d7-4123-81c8-04450932920b" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="video">
+    <H2>Rattle</H2>
+    <video controls loop poster="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/4.png?alt=media&token=051211d1-c2f0-4e62-9407-eeafa9fb55f9">
+      <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/4.mp4?alt=media&token=2b071c87-f3d7-4123-81c8-04450932920b" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-  <video class="video" controls>
-    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/5.mp4?alt=media&token=dfe8bcc0-bbcf-42f7-97b4-fecfd1c4df74" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="video">
+    <H2>Cuddle Friends</H2>
+    <video controls loop poster="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/6.png?alt=media&token=96de40b1-2cde-4414-a31b-9218581477a8">
+      <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/6.mp4?alt=media&token=36248d5e-ea8d-493f-bace-513c80b58538" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-  <video class="video" controls>
-    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/6.mp4?alt=media&token=36248d5e-ea8d-493f-bace-513c80b58538" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="video">
+    <H2>Dinner REMIX</H2>
+    <video controls loop poster="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/5.png?alt=media&token=a6c70fb6-6216-4ef9-99ef-fdf7a46f2e63">
+      <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/5.mp4?alt=media&token=dfe8bcc0-bbcf-42f7-97b4-fecfd1c4df74" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 </div>
 
 </div>
