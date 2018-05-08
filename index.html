@@ -1,22 +1,87 @@
 <html>
 <head>
 <style>
-div {
-  text-align: center
+
+body {
+  margin: 0;
+  /* margin-top: 80px; */
+  background: black;
+  /* linear-gradient(#94F1D2, #57F2E2); */
 }
-img {
-  position: absolute;
-   top: 50%;
-   margin: -200px auto 0 -280px;
-   height:400px;
-   width: 575px;
+
+.video {
+  flex: 1;
+  width: 100vw;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+@media (max-width: 400px) {
+  #content {
+    display: block;
+  }
+}
+
+#header {
+    /* background: linear-gradient(#94F1D2, #57F2E2); */
+    width: 100vw;
+    height: 80px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+}
+
+#logo {
+  text-align: center;
+  height: 50px;
+  margin-top: 15px;
 }
 
 </style>
 </head>
-<body style="background: #1c1d22">
-<div class="wraptocenter">
-<img src="./public/freqlogo.png" />
+<body>
+<div id="header">
+  <img id="logo" src="./public/freqlogo.png" />
+</div>
+
+<div id="content">
+  <video class="video" onclick="this.paused ? this.play() : this.pause();">
+    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/1.mp4?alt=media&token=f10267a6-e4f2-4982-94bf-e3ece44a4e9e" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <video class="video" onclick="this.paused ? this.play() : this.pause();">
+    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/2.mp4?alt=media&token=7c1545b0-0dcd-424d-8cee-bc48ce2347f1" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <video class="video">
+    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/3.mp4?alt=media&token=92f7e2eb-5583-463c-b992-f4ea624889ae" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <video class="video">
+    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/4.mp4?alt=media&token=2b071c87-f3d7-4123-81c8-04450932920b" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <video class="video">
+    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/5.mp4?alt=media&token=dfe8bcc0-bbcf-42f7-97b4-fecfd1c4df74" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <video class="video">
+    <source src="https://firebasestorage.googleapis.com/v0/b/freq-beta-18.appspot.com/o/6.mp4?alt=media&token=36248d5e-ea8d-493f-bace-513c80b58538" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
 </div>
 </body>
 </html>
